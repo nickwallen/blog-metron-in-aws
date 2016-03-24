@@ -29,12 +29,11 @@ If you already have an Amazon Web Services account that you have used to deploy 
 
 4. Apache Metron uses the [official, open source CentOS 6](https://aws.amazon.com/marketplace/pp/B00NQAYLWO) Amazon Machine Image (AMI).  If you have never used this AMI before then you will need to accept Amazon's terms and conditions.  Navigate to the [AMI page](https://aws.amazon.com/marketplace/pp/B00NQAYLWO), click the Continue button.  Choose the "Manual Launch" tab then click the "Accept Software Terms" button.
 
-Software Prerequisites
-----------------------
+### Software Prerequisites
 
 Hopefully you will find that the most difficult tasks are complete.  The computer used to deploy Apache Metron will need to have [Ansible](https://github.com/ansible/ansible), Python, Maven and Git installed.
 
-### Mac OS X
+#### Mac OS X
 
 The easiest way to install these tools on a Mac is to use the excellent [Homebrew](http://brew.sh/) project.
 
@@ -56,18 +55,17 @@ The easiest way to install these tools on a Mac is to use the excellent [Homebre
   ssh-keygen -t rsa
   ```
 
-### Windows
+#### Windows
 1. **TODO**
 2. **TODO**
 3. **TODO**
 
-### Linux
+#### Linux
 1. **TODO**
 2. **TODO**
 3. **TODO**
 
-Deploy Apache Metron
---------------------
+### Deploy Apache Metron
 
 1. Build the latest Apache Metron code using the following commands in a terminal.
 
@@ -121,13 +119,17 @@ Each of the provisioned hosts will be accessible from the internet. Connecting t
 Customize Apache Metron
 -----------------------
 
-While the defaults provided by Metron are useful, the true power of the dashboard comes from its customizability.  Let's uncover where in the world the talkers on our network are located.  
+### Locate Top Talkers
+
+While the defaults provided by Metron are useful, the true power of the dashboard comes from its customizability.  Let's uncover where in the world the top talkers on our network are located.  
 
 1. Add a new panel.  On the far left side of the dashboard hover over the green tab and click the plus (+) icon once it becomes visible.
 
 2. For the panel type choose "Map" and give your map a title.  For "Field" enter `enrichments.geo.ip_src_addr.country`.
 
-**TODO** Add another intersting panel
+###
+
+**TODO** Add some more interesting panels
 
 Next Steps
 ----------
